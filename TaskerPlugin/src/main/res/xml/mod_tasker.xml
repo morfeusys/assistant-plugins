@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<module xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <pattern name="Command" value="*"/>
+    <pattern name="Task" uri="content://com.example.plugin.tasker/commands"/>
+
+    <command android:id="@+id/cmd_tasker_create">
+        <pattern value="(таскер|tasker) [выполн* [задач*|команд*]] $Command"/>
+
+        <sample value="Таскер"/>
+    </command>
+
+    <command android:id="@+id/cmd_tasker_task">
+        <pattern value="[таскер|tasker] $Task"/>
+    </command>
+
+    <command android:id="@+id/cmd_tasker_delete">
+        <pattern value="(таскер|tasker) удали* задач* $Command"/>
+
+        <sample value="Таскер удали задачу"/>
+    </command>
+
+</module>

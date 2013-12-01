@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tasker</string>
+
+    <string name="btn_select_task">Выбрать задачу</string>
+
+    <string name="say_command">Продиктуйте новую команду</string>
+    <string name="canceled">Хорошо</string>
+    <string name="task_not_selected">Для выполнения команды необходимо выбрать задачу</string>
+    <string name="task">Когда я услышу команду \"%1$s\", я выполню задачу \"%2$s\"</string>
+    <string name="tasker_not_installed">Приложение Tasker не установлено</string>
+    <string name="execute_task">Выполняю задачу \"%1$s\"</string>
+    <string name="command_deleted">Команда \"%1$s\" удалена</string>
+    <string name="command_to_delete">Какую команду удалить?</string>
+
+    <string name="speech_select_task">Выберите задачу для выполнения</string>
+</resources>

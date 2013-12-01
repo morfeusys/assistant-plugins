@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<module xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <pattern name="Command" value="*"/>
+
+    <command android:id="@id/cmd_tasker_create">
+        <pattern value="$Command"/>
+    </command>
+
+</module>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_bubble_button_normal">#e6eaf0</color>
+    <color name="bg_bubble_button_pressed">#ced5e0</color>
+
+    <color name="text_bubble">#4b534d</color>
+</resources>

@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.6.+'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    maven {
+        url 'http://voiceassistant.mobi/m2/repository'
+    }
+}
+
+android {
+    compileSdkVersion 18
+    buildToolsVersion "18.0.1"
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 18
+    }
+    buildTypes {
+        release {
+            runProguard true
+            proguardFile getDefaultProguardFile('proguard-android-optimize.txt')
+        }
+    }
+    productFlavors {
+        defaultFlavor {
+            proguardFile 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'mobi.voiceassistant:client:0.1.0-SNAPSHOT'
+    compile 'mobi.voiceassistant:base:0.1.0-SNAPSHOT'
+}
